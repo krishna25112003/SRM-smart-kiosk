@@ -4,55 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admissions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        button {
+            animation: slideIn 1s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-120%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        .animated-image {
+            animation: slideDown 1s ease-out;
+        }
+
+        /* Style for the button */
+         
+    </style>
 </head>
-<style>
-  body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    }
-  @keyframes slideIn {
-    from {
-      transform: translateY(-50px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-
-  h1 {
-    animation: slideIn 1s ease-out;
-  }
-
-  @keyframes slideDown {
-      from {
-        transform: translateY(-120%);
-      }
-      to {
-        transform: translateY(0);
-      }
-    }
-
-    .animated-image {
-      animation: slideDown 1s ease-out;
-    }
-  </style>
-  <title>Animated Image</title>
-</head>
-</style>
-
 <body>
-  <img src="Srmseal.png" alt="Animated Image" class="animated-image">
-<h1>Admissions</h1>
-
-
+    <div class="img"> 
+        <img src="Srmseal.png" alt="Animated Image" class="animated-image">
+    </div>
+    <button>Admissions</button>
 </body>
 </html>
+
 
