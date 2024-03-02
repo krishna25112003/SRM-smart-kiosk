@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sora', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('srmgoat.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    text-align: center;
+    color: #fff;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+}
+
+.text-components {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.text-component {
+    width: 45%;
+}
+
+.text-component h2 {
+    margin-bottom: 10px;
+}
+
+.text-component p {
+    color: #ccc;
+}
+
+.text-component a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.engineering-container {
+    margin-top: 30px;
+}
+
+.engineering-container h2 {
+    margin-bottom: 10px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #be9d18;
+}
