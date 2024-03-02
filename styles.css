@@ -1,21 +1,48 @@
 
 /* Resetting default margin and padding */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap')
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
 /* Styling the page */
 body {
-    background-color: #0c4da2; /* Dark blue background color */
-    color: #fff; /* White text color */
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+   
+  color: #fff; /* White text color */
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(rgba());
+  
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Full height of the viewport */
+  background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('SRM-Placement-Record-e1654678280742.jpg');
+  background-size: cover;
+  background-position: center;
+  
+  
+  
+}
+button {
+  padding: 10px 20px;
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  background-color: #0e2181;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+button:hover {
+  background-color: #1834be;
+}
+ 
