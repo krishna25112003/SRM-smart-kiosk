@@ -1,33 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap')
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body {
+    font-family: 'Sora', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-
-    margin: 0;
-    padding: 0;
-    height: 100vh; /* Full height of the viewport */
-    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('srmgoat.jpg');
+    min-height: 100vh;
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('srmgoat.jpg');
     background-size: cover;
     background-position: center;
-    
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
 }
 
 .admission-card {
     margin: 20px;
     overflow: hidden;
-    
     transition: transform 0.3s ease-in-out;
-    
-    
 }
 
 .admission-card:hover {
@@ -35,20 +36,26 @@ body {
 }
 
 img {
-    width: 50%;
+    width: 100%;
     height: auto;
-   
+    border-radius: 20px;
 }
 
 .admission-btn {
+    border-radius: 20px;
+    font-size:x-large;
+    text-decoration: double;
     display: block;
-    width: 50%;
+    width: 100%;
     padding: 20px;
     text-align: center;
     background-color: #3498db;
     color: #fff;
     border: none;
-    
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+.admission-btn:hover {
+    background-color: #2980b9;
 }

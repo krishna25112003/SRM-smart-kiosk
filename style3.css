@@ -34,6 +34,7 @@ body {
 
 button {
     padding: 20px;
+    height: 100%; /* Set a fixed height for all buttons */
     font-size: 16px;
     color: #fff;
     background-color: #3498db;
@@ -46,3 +47,23 @@ button {
 button:hover {
     background-color: #be9d18;
 }
+/* Add a class selector for the "FOR MORE INFO" button */
+.info-button {
+    padding: 20px;
+    height: 100%; /* Set a fixed height for all buttons */
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+}
+
+.info-button:hover {
+    background-color: #be9d18;
+}
+ 
+
+
