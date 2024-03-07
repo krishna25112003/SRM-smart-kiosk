@@ -1,6 +1,7 @@
 
 /* Resetting default margin and padding */
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap')
+
 *{
   margin: 0;
   padding: 0;
@@ -30,14 +31,15 @@ body {
   
 }
 button {
-  padding: 10px 20px;
+  margin-top: 1rem;
+  padding: 10px 30px;
   font-family: 'Sora', sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 25px;
   color: #fff;
   background-color: #0e2181;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -45,4 +47,3 @@ button {
 button:hover {
   background-color: #1834be;
 }
- 
