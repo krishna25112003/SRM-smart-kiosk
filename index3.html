@@ -7,13 +7,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style3.css">
 </head>
+<style>
+    @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    button{
+        animation: slideIn 1s ease-out;
+    }
+    h1{
+        animation: slideIn 1s ease-out;
+    }
+    h2{
+        animation: slideIn 1s ease-out;
+    }
+
+</style>
 <body>
     <div class="container">
         <h1>Engineering & Technology Programs</h1>
         <h2>Programs Offered</h2>
         <br>
         <div class="buttons-container">
-            <button>B.Tech / M.Tech (Integrated)</button>
+            <a href="btechdetail.html" target="_parent">
+                <button class="info-button">B.Tech / M.Tech (Integrated)</button>
+            </a>
             <button>M.Tech</button>
             <button>B.Arch / B.Design</button>
             <button>M.Arch / M.Des</button>
