@@ -1,1 +1,64 @@
-a
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('srmgoat.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px; /* Increased max-width */
+    margin: auto; /* Center the content horizontally */
+}
+
+
+.content-box {
+    width: 50%; /* Adjusted width to 50% */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.content {
+    text-align: left;
+}
+
+h1 {
+    color: #3498db;
+}
+
+p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.video-container {
+    width: 55%; /* Adjusted width to 50% */
+    margin-left: 20px; /* Adjusted margin */
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
