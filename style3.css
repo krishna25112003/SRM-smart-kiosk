@@ -75,6 +75,7 @@ button:hover {
 button {
     padding: 20px;
     height: 100%; /* Set a fixed height for all buttons */
+    
     font-size: 16px;
     color: #fff;
     background-color: #3498db;
