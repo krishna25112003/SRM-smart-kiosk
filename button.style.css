@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sora', sans-serif;
+    font-size: 30px;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('srmgoat.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin-top: -80px; /* Adjust as needed */
+    font-weight: 400;
+}
+
+h1, h2 {
+    animation: slideIn 1s ease-out;
+    opacity: 1;
+    color: white;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Updated alignment to flex-start */
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+}
+
+.home-button img,
+.logo {
+    max-width: 150px; /* Set the maximum width for the images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.home-button {
+    order: 1;
+}
+
+.logo {
+    order: 2;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.buttons-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+button, .info-button {
+    padding: 40px;
+    height: 100%;
+    font-size: 20px;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+button:hover, .info-button:hover {
+    background-color: #be9d18;
+}
+
+/* Add a class selector for the "FOR MORE INFO" button */
+.info-button {
+    width: 100%;
+}
