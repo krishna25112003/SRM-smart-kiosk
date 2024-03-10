@@ -5,24 +5,49 @@
     padding: 0;
     box-sizing: border-box;
 }
+.h1{
+    font-family: 'Sora', sans-serif;
+}
+.h2{
+    font-family: 'Sora', sans-serif;
+}
 
 body {
     font-family: 'Sora', sans-serif;
     background-color: #f0f0f0;
     margin: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Display header and container vertically */
     align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('srmgoat.jpg');
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('srmgoat.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: none; /* Add background color to the header */
+}
+
+.home-button {
+    color: #fff;
+    text-decoration: none;
+    font-size: large;
+}
+
+.logo {
+    max-height: 20%;
+    max-width: 5%; /* Set the maximum height of the logo */
 }
 
 .container {
     display: flex;
     justify-content: space-between;
     width: 80%;
+    margin-top: -50px; /* Adjust the margin-top for spacing */
 }
 
 .admission-card {
@@ -62,5 +87,9 @@ img {
 
 a {
     text-decoration: none;
+}
+.home-button{
+    max-height: 20%;
+    max-width: 5%;
 }
 
