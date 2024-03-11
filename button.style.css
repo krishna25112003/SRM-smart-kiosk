@@ -51,16 +51,18 @@ h2 {
 
 .home-button img,
 .logo {
-    max-width: 150px; /* Set the maximum width for the images */
+    max-width: 75px; /* Set the maximum width for the images */
     height: auto; /* Maintain aspect ratio */
 }
 
 .home-button {
     order: 1;
+    margin-left: 20px;
 }
 
 .logo {
     order: 2;
+    margin-right: 20px;
 }
 
 @keyframes slideIn {
