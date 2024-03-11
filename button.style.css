@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Sora', sans-serif;
-    font-size: 30px;
+    font-size: 20px; /* Reduced font size */
     background-color: #f0f0f0;
     margin: 0;
     display: flex;
@@ -76,15 +76,15 @@ h2 {
 
 .buttons-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr); /* Changed columns to 4 */
     grid-gap: 15px;
     margin-top: 20px; /* Adjust as needed */
 }
 
 button, .info-button {
-    padding: 40px;
+    padding: 20px; /* Reduced padding */
     height: 100%;
-    font-size: 20px;
+    font-size: 16px; /* Reduced font size */
     color: #fff;
     background-color: #3498db;
     border: none;
