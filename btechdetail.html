@@ -256,5 +256,15 @@
             </a>
         </div>
     </div>
+    <audio id="myAudio" autoplay>
+        <source src="https://smartsrm.s3.amazonaws.com/Choose_program.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            var audio = document.getElementById('myAudio');
+            audio.play();
+        });
+    </script>
 </body>
 </html>
